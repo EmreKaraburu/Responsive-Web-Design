@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+<header>
+    <h1>Community Blog</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-post.html">New Post</a></li>
+            <li><a href="about.html">About Us</a></li> 
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="login-register-link">
+        <a href="login-register.html">Login</a>
+    </div>
+</header>
+
+<main>
+    <article id="post-container">
+        <h2 id="post-title">Loading Post...</h2>
+        <img id="post-image" src="" alt="Blog Image" style="width:100%; max-width:600px; display:block; margin: 10px auto;">
+        <div id="post-content">Loading content...</div>
+    </article>
+
+    <section id="comments">
+        <h3>Comments</h3>
+        <ul id="comment-list"></ul>
+        <form id="comment-form">
+            <textarea id="comment-text" required></textarea>
+            <button type="submit">Submit Comment</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Community Blog</p>
+</footer>
+
+</body>
+</html>

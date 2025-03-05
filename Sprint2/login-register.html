@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <!-- We added Linking stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-blog"></i> Community Blog</h1>
+        <!-- We added Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-post.html">New Post</a></li>
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="login-register-link">
+            <a href="login-register.html">Login</a>
+        </div>
+    </header>
+    <main>
+        <!-- We added Login and Register container -->
+        <section id="login-register-container">
+            <!-- We added Login form -->
+            <div id="login">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <!-- We added Register form -->
+            <div id="register">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <label for="register-name">Name:</label>
+                    <input type="text" id="register-name" required>
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Community Blog</p>
+    </footer>
+</body>
+</html>
