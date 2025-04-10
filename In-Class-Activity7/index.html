@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Catch Me Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        #game-container {
+            width: 1200px;
+            height: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 3px solid #333;
+            position: relative;
+            overflow: hidden;
+        }
+        #game-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 5px;
+        }
+        #game-info {
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div id="game-info">
+        <h2>Level: <span id="level">1</span></h2>
+        <h2>Clicks: <span id="clicks">0</span>/3</h2>
+    </div>
+    
+    <div id="game-container">
+        <button id="game-button">Catch Me!</button>
+    </div>
+    
+    
+    <script src="game.js"></script>
+</body>
+</html>
