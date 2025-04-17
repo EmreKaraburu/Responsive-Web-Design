@@ -64,15 +64,21 @@ function displayScores() {
 
 function addScore() {
 
-    var name = $("name").value;
+    var name = $("name").value.trim();
     var score = parseInt($("score").value);
-    
+    var nameRegex = /^[A-Za-z\s]+$/;
 
-    if (name === "" || isNaN(score) || score < 0 || score > 100) {
-        alert("You must enter a name and a valid score");
+    if (
+        name === "" || 
+        !nameRegex.test(name) || 
+        isNaN(score) || 
+        score < 0 || 
+        score > 100
+    ) {
+        alert("You must enter a valid name (letters only) and a valid score (0-100)");
         return;
     }
-    
+
     names.push(name);
     scores.push(score);
 
