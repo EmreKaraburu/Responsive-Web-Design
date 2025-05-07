@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Blog</title>
+    <!-- We linked the main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- We linked Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- We linked Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- We linked FancyBox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="js/ajax.js"></script>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-blog"></i> Community Blog</h1>
+        <!-- We added the navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-post.html">New Post</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- We added the Login/Register link -->
+        <div id="login-register-link">
+            <a href="login-register.html">Login</a>
+        </div>
+    </header>
+    <main>
+        <!-- We added the Slider Section -->
+        <section id="slider-container">
+             <h2>Featured Posts</h2>
+             <!-- We added the Slick Slider div -->
+             <div id="slider">
+                 <!-- We added Slide 1 -->
+                 <div>
+                     <!-- We added FancyBox link for the image -->
+                     <a href="images/community.jpg" data-fancybox="gallery" data-caption="Welcome to the Community Blog! - Share your ideas and stories.">
+                         <img src="images/community.jpg" alt="Community">
+                     </a>
+                     <h3>Welcome to the Community Blog!</h3>
+                     <p>Share your ideas and stories.</p>
+                 </div>
+                 <!-- We added Slide 2 -->
+                 <div>
+                     <!-- We added FancyBox link for the image -->
+                     <a href="images/ai-yapayzeka.jpg" data-fancybox="gallery" data-caption="Latest AI Developments - Discover the future of AI.">
+                         <img src="images/ai-yapayzeka.jpg" alt="AI">
+                     </a>
+                     <h3>Latest AI Developments</h3>
+                     <p>Discover the future of AI.</p>
+                 </div>
+                 <!-- We added Slide 3 -->
+                 <div>
+                     <!-- We added FancyBox link for the image -->
+                     <a href="images/kodlama.jpg" data-fancybox="gallery" data-caption="Learn Coding Basics - Start your coding journey here.">
+                         <img src="images/kodlama.jpg" alt="Coding">
+                     </a>
+                     <h3>Learn Coding Basics</h3>
+                     <p>Start your coding journey here.</p>
+                 </div>
+
+             </div>
+        </section>
+
+        <!-- We added the Blog Posts Section -->
+        <section id="blog-posts">
+            <h2>Recent Posts</h2>
+
+            <!-- We added Post 1 -->
+            <article class="post">
+                <h2>New Beginnings: Welcome!</h2>
+                <!-- We added post metadata -->
+                <p class="post-meta">
+                    <span class="author">Author: Emre Karaburu</span> |
+                    <span class="date">Date: February 18, 2025</span>
+                </p>
+                <!-- We added the content excerpt -->
+                <div class="content-excerpt">
+                    <p>Welcome to our blog! This blog is a platform where community members can share their ideas... <a href="#" class="read-more">Read More</a></p>
+                </div>
+                <!-- We added the full content area (initially hidden) -->
+                <div class="content-full" style="display: none;">
+                    <p>Welcome to our blog! This blog is a platform where community members can share their ideas, experiences, and stories. Our goal is to create an inspiring space where everyone's voice can be heard.</p>
+                    <p>On our blog, you can find articles on various topics and share your own writings. By interacting with our community, you can share your experiences with a wide audience.</p>
+                    <!-- We added the 'Read Less' link -->
+                    <a href="#" class="read-less" style="display: block; margin-top: 10px; font-weight: bold;">Read Less</a>
+                </div>
+            </article>
+
+            <!-- We added Post 2 -->
+            <article class="post">
+                <h2>Understanding AI</h2>
+                <!-- We added post metadata -->
+                <p class="post-meta">
+                    <span class="author">Author: Jane Doe</span> |
+                    <span class="date">Date: April 28, 2025</span>
+                </p>
+                <!-- We added the content excerpt -->
+                <div class="content-excerpt">
+                    <p>Artificial intelligence is transforming our world. Let's dive into the basics... <a href="#" class="read-more">Read More</a></p>
+                </div>
+                <!-- We added the full content area (initially hidden) -->
+                <div class="content-full" style="display: none;">
+                    <p>Artificial intelligence is transforming our world. Let's dive into the basics. AI refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
+                    <p>The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.</p>
+                    <!-- We added the 'Read Less' link -->
+                    <a href="#" class="read-less" style="display: block; margin-top: 10px; font-weight: bold;">Read Less</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Inspiring Thoughts</h2>
+                <div id="inspirations-container">
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Weather Forecast</h2>
+                <div id="weather-container">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- We added the footer -->
+    <footer>
+        <p>&copy; 2025 Community Blog</p>
+    </footer>
+
+    <!-- We included jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- We included Slick Slider library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- We included FancyBox library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- We included our custom index script -->
+    <script src="js/index.js"></script>
+</body>
+</html>
