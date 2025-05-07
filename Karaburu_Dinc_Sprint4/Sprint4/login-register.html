@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <!-- We linked the main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- We linked Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- We linked Prism CSS for code highlighting (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <header>
+        <!-- We added the site title with an icon -->
+        <h1><i class="fas fa-blog"></i> Community Blog</h1>
+        <!-- We added Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-post.html">New Post</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- We added the Login/Register link in the header -->
+        <div id="login-register-link">
+            <a href="login-register.html">Login</a>
+        </div>
+    </header>
+    <main>
+        <!-- We added Login and Register container -->
+        <section id="login-register-container">
+            <!-- We added Login form -->
+            <div id="login">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <!-- We added the name attribute for validation -->
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <!-- We added the name attribute for validation -->
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <!-- We added Register form -->
+            <div id="register">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <label for="register-name">Name:</label>
+                    <!-- We added the name attribute for validation -->
+                    <input type="text" id="register-name" name="register-name" required>
+                    <label for="register-email">Email:</label>
+                    <!-- We added the name attribute for validation -->
+                    <input type="email" id="register-email" name="register-email" required>
+                    <label for="register-password">Password:</label>
+                    <!-- We added the name attribute for validation -->
+                    <input type="password" id="register-password" name="register-password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- We added the footer -->
+    <footer>
+        <p>&copy; 2025 Community Blog</p>
+    </footer>
+
+    <!-- We included jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- We included jQuery Validate library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <!-- We included our custom login/register script -->
+    <script src="js/login-register.js"></script>
+</body>
+</html>
