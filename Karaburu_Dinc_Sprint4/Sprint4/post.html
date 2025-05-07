@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <!-- We linked the main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- We linked jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- We linked Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- We linked Prism CSS for code highlighting (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+<header>
+    <!-- We added the site title -->
+    <h1>Community Blog</h1>
+    <!-- We added the navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-post.html">New Post</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- We added the Login/Register link -->
+    <div id="login-register-link">
+        <a href="login-register.html">Login</a>
+    </div>
+</header>
+
+<main>
+    <!-- We added the main article container -->
+    <article id="post-container">
+        <!-- We added the post title placeholder -->
+        <h2 id="post-title">Loading Post...</h2>
+        <!-- We added the post image placeholder -->
+        <img id="post-image" src="" alt="Blog Image" style="width:100%; max-width:600px; display:block; margin: 10px auto;">
+        <!-- We added the post content placeholder -->
+        <div id="post-content">Loading content...</div>
+    </article>
+
+    <!-- We added the comments section -->
+    <section id="comments">
+        <h3>Comments</h3>
+        <!-- We added the list for comments -->
+        <ul id="comment-list"></ul>
+        <!-- We added the form to submit new comments -->
+        <form id="comment-form">
+            <textarea id="comment-text" required></textarea>
+            <button type="submit">Submit Comment</button>
+        </form>
+    </section>
+</main>
+
+<!-- We added the footer -->
+<footer>
+    <p>&copy; 2025 Community Blog</p>
+</footer>
+
+<!-- We included jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- We included jQuery UI library -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<!-- We included Prism JS for code highlighting (optional) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+<!-- We included our custom post script -->
+<script src="js/post.js"></script>
+
+</body>
+</html>
